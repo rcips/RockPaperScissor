@@ -24,15 +24,7 @@
                 background-color: rgb(109, 158, 250);
             }
 
-            .game {
-                border: 1px solid black;
-                background-color: white;
-                width: 500px;
-                text-align: center;
-                margin: auto;
-                padding: 10px;
-                border-radius: 12px;
-            }
+           
             .rock {
                 padding: 0.8rem;
                 width: 100px;
@@ -107,17 +99,20 @@
         <div class="title text-center text-white" style="padding: 10px">
             <h1>Rock Paper Scissor</h1>
         </div>
+        <div
+            class="row flex-column bg-white border border-dark w-70 text-center justify-content-center m-5"
+        >
         <section class="game">
             <!--Title -->
 
             <!--Display Score of player and computer -->
             <div class="score">
-                <div class="playerScore">
-                    <h2 class="d-flex row text-center">Player</h2>
+                <div class="playerScore" style="margin-right: 10px">
+                    <h2>Player</h2>
                     <p class="p-count count">0</p>
                 </div>
-                <div class="computerScore">
-                    <h2 class="d-flex row text-center">Computer</h2>
+                <div class="computerScore" style="margin-left: 10px">
+                    <h2>Computer</h2>
                     <p class="c-count count">0</p>
                 </div>
             </div>
@@ -147,15 +142,16 @@
             <!--Reload the game -->
             <button class="restart"></button>
         </section>
+        </div>
 
         <section>
-            <div
+           <div
                 class="bg-white border border-dark rounded-3 w-70 p-3 text-center justify-content-center m-5"
+                id="menu"
+                style="text-align: center"
             >
-                <h2>Match History</h2>
-                <ul id="menu" style="text-align: center">
+                    <h2>Match History</h2>
                     <p class="li"></p>
-                </ul>
             </div>
         </section>
 
