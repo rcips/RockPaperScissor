@@ -23,8 +23,6 @@
             body {
                 background-color: rgb(109, 158, 250);
             }
-
-           
             .rock {
                 padding: 0.8rem;
                 width: 100px;
@@ -69,6 +67,13 @@
                 z-index: 1;
                 padding-left: 50px;
                 text-align: center;
+            }
+            #p-count,
+            #c-count {
+                text-align: center;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+            }
             .move {
                 font-size: 2rem;
                 font-weight: bold;
@@ -95,56 +100,55 @@
         <div
             class="row flex-column bg-white border border-dark w-70 text-center justify-content-center m-5"
         >
-        <section class="game">
-            <!--Title -->
+            <section class="game">
+                <!--Title -->
 
-            <!--Display Score of player and computer -->
+                <!--Display Score of player and computer -->
                 <div class="d-flex justify-content-center mx-auto">
-                <div class="playerScore" style="margin-right: 10px">
-                    <h2>Player</h2>
-                    <p class="p-count count">0</p>
+                    <div class="playerScore" style="margin-right: 10px">
+                        <h2>Player</h2>
+                        <p class="p-count count">0</p>
+                    </div>
+                    <div class="computerScore" style="margin-left: 10px">
+                        <h2>Computer</h2>
+                        <p class="c-count count">0</p>
+                    </div>
                 </div>
-                <div class="computerScore" style="margin-left: 10px">
-                    <h2>Computer</h2>
-                    <p class="c-count count">0</p>
+                <div class="move">Choose your move</div>
+
+                <!--Number of moves left before game ends -->
+                <div class="movesleft"></div>
+
+                <!--Options available to player to play game -->
+                <div class="options">
+                    <button class="rock">
+                        <i class="fa-solid fa-hand"></i>Rock
+                    </button>
+                    <button class="paper">
+                        <i class="fa-solid fa-hand-back-fist"></i>Paper
+                    </button>
+                    <button class="scissor">
+                        <i class="fa-solid fa-hand-scissors"></i>Scissors
+                    </button>
                 </div>
-            </div>
 
-            <div class="move">Choose your move</div>
-
-            <!--Number of moves left before game ends -->
-            <div class="movesleft"></div>
-
-            <!--Options available to player to play game -->
-            <div class="options">
-                <button class="rock">
-                    <i class="fa-solid fa-hand"></i>Rock
-                </button>
-                <button class="paper">
-                    <i class="fa-solid fa-hand-back-fist"></i>Paper
-                </button>
-                <button class="scissor">
-                    <i class="fa-solid fa-hand-scissors"></i>Scissors
-                </button>
-            </div>
-
-            <!--Final result of game -->
-            <h4 class="gameText" id="playerText"></h4>
-            <h4 class="gameText" id="computerText"></h4>
-            <h4 class="result"></h4>
-            <!--Reload the game -->
-            <button class="restart"></button>
-        </section>
+                <!--Final result of game -->
+                <h4 class="gameText" id="playerText"></h4>
+                <h4 class="gameText" id="computerText"></h4>
+                <h4 class="result"></h4>
+                <!--Reload the game -->
+                <button class="restart"></button>
+            </section>
         </div>
 
         <section>
-           <div
+            <div
                 class="bg-white border border-dark rounded-3 w-70 p-3 text-center justify-content-center m-5"
                 id="menu"
                 style="text-align: center"
             >
-                    <h2>Match History</h2>
-                    <p class="li"></p>
+                <h2 class="text-center">Match History</h2>
+                <p class="li"></p>
             </div>
         </section>
 
